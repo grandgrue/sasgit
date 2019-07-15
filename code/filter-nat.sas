@@ -6,3 +6,7 @@ data work.bevisland;
   drop ExportVersionCd StichtagDatMM;
 run;
 
+/* Sortieren der Tabelle nach Nation und Jahr */
+proc sort data=work.bevisland;
+  by NationLang StichtagDatJahr;
+run;
