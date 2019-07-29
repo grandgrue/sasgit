@@ -165,7 +165,6 @@ data WORK.BEVBESTNAT (label='Ausgewählte Daten von BVS Bevoelkerungsbestand int.
 		ExportVersionCd $ 200
 		StichtagDatMM 8
 		StichtagDatJahr 8
-		NationCd $ 200
 		NationLang $ 200
 		AnzBestWir 8
 		;
@@ -173,7 +172,6 @@ data WORK.BEVBESTNAT (label='Ausgewählte Daten von BVS Bevoelkerungsbestand int.
 		ExportVersionCd="Exportversion (Code)"  /* Exportversion (Code) */
 		StichtagDatMM="Daten gültig per MM"  /* Daten gültig per MM */
 		StichtagDatJahr="Daten gültig per Jahr"  /* Daten gültig per Jahr */
-		NationCd="Staatsangehörigkeit (Code)"  /* Staatsangehörigkeit (Code) */
 		NationLang="Staatsangehörigkeit (lang)"  /* Staatsangehörigkeit (lang) */
 		AnzBestWir="wirtschaftliche Bevölkerung"  /* wirtschaftliche Bevölkerung */
 		;
@@ -183,7 +181,6 @@ data WORK.BEVBESTNAT (label='Ausgewählte Daten von BVS Bevoelkerungsbestand int.
 			ExportVersionCd
 			StichtagDatMM
 			StichtagDatJahr
-			NationCd
 			NationLang
 			AnzBestWir 
 		 /* default EXPCOLUMNLEN is 32 */ 
