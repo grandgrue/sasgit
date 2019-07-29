@@ -140,6 +140,11 @@ ODS tagsets.sasreport13(ID=EGSRX) FILE=EGSRX
     ENCODING=UTF8
     options(rolap="on")
 ;
+%LET _CLIENTTASKLABEL='SAS Information Map importieren';
+%LET _CLIENTPROCESSFLOWNAME='Prozessfluss';
+%LET _CLIENTPROJECTPATH='\\szh.loc\ssz\users\sszgrm\Dokumente\GitHub\sasgit\BeispielProjektGit.egp';
+%LET _CLIENTPROJECTPATHHOST='ZRHV0A8A';
+%LET _CLIENTPROJECTNAME='BeispielProjektGit.egp';
 
 GOPTIONS ACCESSIBLE;
 /* assign the library using the INFOMAPS library engine */
@@ -204,6 +209,14 @@ GOPTIONS NOACCESSIBLE;
 %LET _CLIENTPROJECTPATHHOST=;
 %LET _CLIENTPROJECTNAME=;
 
+%LET SYSLAST=WORK.BEVBESTNAT;
+%LET _CLIENTTASKLABEL='filter-nat';
+%LET _CLIENTPROCESSFLOWNAME='Prozessfluss';
+%LET _CLIENTPROJECTPATH='\\szh.loc\ssz\users\sszgrm\Dokumente\GitHub\sasgit\BeispielProjektGit.egp';
+%LET _CLIENTPROJECTPATHHOST='ZRHV0A8A';
+%LET _CLIENTPROJECTNAME='BeispielProjektGit.egp';
+%LET _SASPROGRAMFILE='\\szh.loc\ssz\users\sszgrm\Dokumente\GitHub\sasgit\code\filter-nat.sas';
+%LET _SASPROGRAMFILEHOST='ZRHV0A8A';
 
 GOPTIONS ACCESSIBLE;
 /* Ausgewählte karibische Destinationen filtern */
@@ -229,14 +242,6 @@ GOPTIONS NOACCESSIBLE;
 %LET _SASPROGRAMFILE=;
 %LET _SASPROGRAMFILEHOST=;
 
-%LET SYSLAST=WORK.BEVISLAND;
-%LET _CLIENTTASKLABEL='nat-gplot';
-%LET _CLIENTPROCESSFLOWNAME='Prozessfluss';
-%LET _CLIENTPROJECTPATH='\\szh.loc\ssz\users\sszgrm\Dokumente\GitHub\sasgit\BeispielProjektGit.egp';
-%LET _CLIENTPROJECTPATHHOST='ZRHV0A8A';
-%LET _CLIENTPROJECTNAME='BeispielProjektGit.egp';
-%LET _SASPROGRAMFILE='\\szh.loc\ssz\users\sszgrm\Dokumente\GitHub\sasgit\code\nat-gplot.sas';
-%LET _SASPROGRAMFILEHOST='ZRHV0A8A';
 
 GOPTIONS ACCESSIBLE;
 /* Einfache Grafik ausgeben */ 
